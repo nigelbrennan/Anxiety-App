@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgapp"
+    tools:context=".CreateProfileActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:title="Tap Below"
+        app:popupTheme="@style/Theme.AppCompat.Light"
+
+        >
+
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="Create profile" />
+
+
+
+
+    <EditText
+        android:id="@+id/create_profile_name_editText"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp"
+        android:textColor="#332FA2"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bgpurple"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:hint="Name"
+        />
+
+
+
+
+    <EditText
+        android:id="@+id/create_profile_email_editText"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp"
+        android:textColor="#332FA2"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bgpurple"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:hint="Email" />
+
+    <ProgressBar
+        android:id="@+id/create_profile_progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Date of birth"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="28sp" />
+
+
+    <TextView
+        android:id="@+id/create_profile_dob_textView"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:hint="dd_mm_yyyy"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="28sp" />
+
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:id="@+id/create_profile_button"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPurple"
+        android:text="create_profile"
+        android:paddingBottom="10dp"
+        android:textSize="28sp"
+        android:background="@drawable/bgbtn"
+        android:layout_width="280dp"
+        android:layout_height="70dp" />
+
+
+
+
+
+<LinearLayout
+    android:id="@+id/layoutParent"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</LinearLayout>
+
+</LinearLayout>
+</ScrollView>
