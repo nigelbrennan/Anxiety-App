@@ -1,0 +1,34 @@
+class Point(object):
+	def __init__(self, x, y):
+		self.y = y
+		self.x = x
+	def __str__(self):
+		return '{} {}'.format(self.x, self.y)
+
+class Shape(object):
+	def __init__(self, points):
+		self.p1 = points[0]
+		self.p2 = points[1]
+		self.p3 = points[2]
+	def sides(self):
+		return 'hello'	
+
+
+class Triangle(Shape):
+
+	def __str__(self):
+		return '{} {} {}'.format(self.p1, self.p2, self.p3)
+	def sides(self):
+		return 'hello'
+
+
+def main():
+
+	t1 = Triangle([Point(0,0), Point(3,4), Point(6, 0)])
+	print(t1)
+	print(t1.sides())
+	#print(t1.perimeter())
+	#print(t1.area())
+
+if __name__ == '__main__':
+	main()
